@@ -1,0 +1,18 @@
+$ffMain: "Cormorant Infant", serif;
+$ffSecondary: "PT Sans", sans-serif;
+$ffBlackish: rgb(64, 64, 64);
+$ffGreanish: rgb(72, 151, 76);
+
+%flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+%flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}

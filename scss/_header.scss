@@ -1,0 +1,125 @@
+.section-one {
+  text-align: center;
+  height: 210px;
+  position: relative;
+
+  &__title {
+    font-size: 36px;
+    font-family: $ffMain;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    line-height: 1;
+    margin: 2rem 0 0.5rem 0;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+    font-family: $ffMain;
+    color: rgb(89, 89, 89);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  &__nav {
+    width: 1134px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 1px solid black;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+
+    & a {
+      font-family: $ffSecondary;
+      text-decoration: none;
+      color: #000;
+    }
+
+    & a:hover {
+      color: $ffGreanish;
+    }
+
+    & a:first-child {
+      color: $ffGreanish;
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) and (min-width: 1025px) {
+  .section-one {
+    &__title {
+      font-size: 2rem;
+      margin: 2rem 0 0.5rem 0;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+    }
+
+    &__nav {
+      width: 95%;
+      font-size: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .section-one {
+    &__title {
+      font-size: 1.9rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+    }
+
+    &__nav {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .section-one {
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__subtitle {
+      font-size: 1.2rem;
+    }
+
+    &__nav {
+      width: 75%;
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+      flex-wrap: wrap;
+      height: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .section-one {
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__nav {
+      width: 95%;
+      font-size: 0.9rem;
+      padding: 0.5rem 0;
+      flex-wrap: wrap;
+      height: 5rem;
+    }
+  }
+}
